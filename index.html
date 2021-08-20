@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/40a6f3ecff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Bootstrap Instagram Photo feed</title>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <!-- Navbar -->
+
+        <!-- Navbar-Icono Instagram -->
+
+            <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top ">
+                <div class="container ">
+                    <a class="navbar-brand" href="#https://www.Instagram.com">
+                        <i class="fab fa-instagram" style="font-size: 25px;"></i>
+                            <img 
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="" width="100" height="100" class="d-inline-block img-fluid align-top ">
+                            </img> 
+                    </a> 
+        <!-- btn Create a new post-->
+
+                    <nav class="navbar-nav">
+                                    
+                        <div class="d-flex flex-row bd-highlight ">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Create a new post
+                            </button>
+        <!-- dropdown   engranaje     -->
+
+                            <div class="dropdown ms-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-cog"></i>
+                                </a>
+                                                
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>              
+                    </nav>  
+                </div> 
+            </nav>
+    </div>
+
+        <!-- Modal btn-create a new post -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <button class="button btn-light border border-1 bg-light mt-2">
+                                <i class="fas fa-camera "></i>
+                            </button>
+                            <button class="button btn-light border border-1 bg-light mt-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </button>           
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>                   
+
+
+        <!-- Nav Pills -->
+
+        <div class="container">
+            <div class="nav-pills mt-5">
+                <ul class="nav nav-pills  mb-3 m-2 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="tablist">
+                      <button class="nav-item nav-link active bg-light text-secondary mt-4" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <i class="fas fa-th"></i>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-item nav-link   bg-light text-secondary mt-4 ms-1 " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <i class="fas fa-square"></i>
+                      </button>
+                    </li>
+                </ul>
+            </div>        
+        </div>
+
+       <!-- First Pill Contain (multyimages)-->
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="card-group border-0 ">
+                    <div class="card border-0">
+                    <img src="https://image.freepik.com/foto-gratis/hombre-surf-sus-manos-orilla-mar_33835-1038.jpg" class="card-img mx-1 my-1" alt="...">
+                    
+                    </div>
+                    <div class="card border-0">
+                    <img src="https://www.rexpetcare.com/wp-content/uploads/2018/04/curiosidades_perros-1080x675.jpg" class="card-img h-100 mx-1 my-1" alt="...">
+                    
+                    </div>
+                    <div class="card border-0">
+                    <img src="https://www.luke.nl/wp-content/uploads/bloomreach-afbeelding.jpg" class="card-img h-100 w-100 mx-1 my-1" alt="...">
+                    
+                    </div>
+                </div>
+        
+                <div class="card-group border-0 ">
+                    <div class="card border-0">
+                    <img src="https://picsum.photos/id/555/400/300" class="card-img mx-1 my-1" alt="...">
+                    
+                    </div>
+                    <div class="card border-0">
+                    <img src="https://picsum.photos/id/1025/400/300" class="card-img h-100 mx-1 my-1" alt="...">
+                    
+                    </div>
+                    <div class="card border-0">
+                    <img src="https://picsum.photos/seed/picsum/400/300" class="card-img h-100 w-100 mx-1 my-1" alt="...">
+                    
+                    </div>
+                </div>
+
+                <div class="card-group border-0 ">
+                    <div class="card border-0">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8LAVN1QWOWIBG75AfWYKUpcfa44CxCKYmvQ&usqp=CAU" class="card-img h-100 mx-1 my-1" alt="...">
+                        
+                    </div>
+                    <div class="card border-0">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cala_Macarelleta_em_Menorca.jpg" class="card-img h-100 mx-1 my-1" alt="...">
+                        
+                    </div>
+                    <div class="card border-0">
+                        <iframe  src="https://www.youtube.com/embed/QYxrXWdVc3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="card-img h-100 mx-1 my-1"></iframe>
+                    
+                    </div>
+                </div>
+            </div>
+
+        <!-- Second Pill Contain (Photo feed) -->
+
+            <div class="tab-pane fade bg-light" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">My first photo</h5>
+                            <h5 class="col-2 card-text">12/14</h5>
+                        </div>
+                    
+                            <img src="https://image.freepik.com/foto-gratis/hombre-surf-sus-manos-orilla-mar_33835-1038.jpg" class="img" style="width: 801px;
+                            margin-left: -12px;"  alt=""></img>
+                        
+                        <p class="px-3 my-2"><strong>23 likes</strong></p>
+                        <p class="px-3">This is my first photo of the feed. This is a multiline comment for testing purpose. I am learning to code with Breathecode</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">Some cute thing</h5>
+                            <h5 class="col-2 card-text">12/17</h5>
+                        </div>
+                        <img src="https://www.rexpetcare.com/wp-content/uploads/2018/04/curiosidades_perros-1080x675.jpg" style="width: 801px;
+                        margin-left: -12px;" alt=""></img>
+                        <p class="px-3 my-2"><strong>50 likes</strong></p>
+                        <p class="px-3">The internet approves this cute dog <strong>#BreatheCode</strong></p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">Me studying Code</h5>
+                            <h5 class="col-2 card-text">12/18</h5>
+                        </div>
+                        <img src="https://www.luke.nl/wp-content/uploads/bloomreach-afbeelding.jpg" style="width: 801px;
+                        margin-left: -12px;" alt=""></img>
+                        <p class="px-3 my-2"><strong>100 likes</strong></p>
+                        <p class="px-3">TThis is me waiting for the screen to show my awesome first website made at BreatheCode</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">Car in the nature</h5>
+                            <h5 class="col-2 card-text">12/18</h5>
+                        </div>
+                        <img src="https://picsum.photos/id/555/400/300" style="width: 801px;
+                        margin-left: -12px;" alt=""></img>
+                        <p class="px-3 my-2"><strong>23 likes</strong></p>
+                        <p class="px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">My Cute Dog</h5>
+                            <h5 class="col-2 card-text">12/19</h5>
+                        </div>
+                        <img src="https://picsum.photos/id/1025/400/300" style="width: 801px;
+                        margin-left: -12px;" alt=""></img>
+                        <p class="px-3 my-2"><strong>500 likes</strong></p>
+                        <p class="px-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">Mountain</h5>
+                            <h5 class="col-2 card-text">12/19</h5>
+                        </div>
+                        <img src="https://picsum.photos/seed/picsum/400/300" style="width: 801px;
+                        margin-left: -12px;" alt=""></img>
+                        <p class="px-3 my-2"><strong>46 likes</strong></p>
+                        <p class="px-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">Beach Day</h5>
+                            <h5 class="col-2 card-text">06/25</h5>
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8LAVN1QWOWIBG75AfWYKUpcfa44CxCKYmvQ&usqp=CAU" style="width: 801px;
+                        margin-left: -12px;" alt=""></img>
+                        <p class="px-3 my-2"><strong>75 likes</strong></p>
+                        <p class="px-3">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">Home</h5>
+                            <h5 class="col-2 card-text">07/15</h5>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cala_Macarelleta_em_Menorca.jpg" style="width: 801px;
+                        margin-left: -12px;" alt=""></img>
+                        <p class="px-3 my-2"><strong>1000 likes</strong></p>
+                        <p class="px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card my-4 mx-auto w-50">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">Scuba Diving</h5>
+                            <h5 class="col-2 card-text">08/17</h5>
+                        </div>
+                        <iframe  src="https://www.youtube.com/embed/QYxrXWdVc3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="card-img" style="width: 801px;margin-left: -12px;height: 500px;">
+                        </iframe>
+                        <p class="px-3 my-2"><strong>555 likes</strong></p>
+                        <p class="px-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+</body>
+</html>
